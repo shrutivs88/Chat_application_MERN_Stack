@@ -84,7 +84,7 @@ const Home = () => {
           theme: "dark",
         });
       } catch (error) {
-        console.error("Upload failed:", error);
+        //console.error("Upload failed:", error);
         toast.error("Upload failed. Please try again.", {
           theme: "dark",
         });
@@ -228,7 +228,7 @@ const Home = () => {
               label="Name"
               inputType="text"
               iconName={faUser}
-              placeholder="Please Enter your name"
+              placeholder="Please Enter Your Name"
               id="name"
               isRequired={true}
               handleOnChange={(e) => setName(e.target.value)}
@@ -274,14 +274,14 @@ const Home = () => {
                 icon={showConfirmPassword ? faEyeSlash : faEye}
               />
             </div>
-             <FormField
+            <FormField
               label="Choose a Avatar"
               inputType="file"
               iconName={faUserAstronaut}
               id="avatar"
               isFileInput={true}
               handleOnChange={(e) => uploadAvatar(e)}
-            /> 
+            />
           </>
         )}
         {isLogin && (
