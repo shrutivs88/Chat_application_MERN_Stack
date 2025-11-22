@@ -274,14 +274,14 @@ const Home = () => {
                 icon={showConfirmPassword ? faEyeSlash : faEye}
               />
             </div>
-            <FormField
+            {/* <FormField
               label="Choose a Avatar"
               inputType="file"
               iconName={faUserAstronaut}
               id="avatar"
               isFileInput={true}
               handleOnChange={(e) => uploadAvatar(e)}
-            />
+            /> */}
           </>
         )}
         {isLogin && (
