@@ -48,7 +48,7 @@ const Home = () => {
     const user = JSON.parse(localStorage.getItem("userInfo"));
     if (user) {
       setUser(user);
-      navigate("/chat");
+      navigate("/login");
     }
   }, [navigate]);
 
@@ -84,7 +84,11 @@ const Home = () => {
           theme: "dark",
         });
       } catch (error) {
+<<<<<<< HEAD
+       
+=======
         //console.error("Upload failed:", error);
+>>>>>>> 2c9ebc628a92e39bcbd75f6233c309639f36f6e3
         toast.error("Upload failed. Please try again.", {
           theme: "dark",
         });
@@ -137,7 +141,7 @@ const Home = () => {
       toast.success("User registration is successful!", {
         theme: "dark",
       });
-      navigate("/chat");
+      navigate("/login");
     } catch (error) {
       toast.error(
         `Unable to register User at this time, Please try again later.`,
@@ -228,7 +232,11 @@ const Home = () => {
               label="Name"
               inputType="text"
               iconName={faUser}
+<<<<<<< HEAD
+              placeholder="Please Enter your name"
+=======
               placeholder="Please Enter Your Name"
+>>>>>>> 2c9ebc628a92e39bcbd75f6233c309639f36f6e3
               id="name"
               isRequired={true}
               handleOnChange={(e) => setName(e.target.value)}
