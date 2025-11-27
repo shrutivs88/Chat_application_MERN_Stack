@@ -134,7 +134,7 @@ const Home = () => {
       localStorage.setItem("userInfo", JSON.stringify(data));
       setUser(data);
       setIsLoading(false);
-      toast.success("User registration is successful!", {
+      toast.success("User registration is successful! Please Login", {
         theme: "dark",
       });
       navigate("/login");

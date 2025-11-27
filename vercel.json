@@ -1,5 +1,12 @@
+<<<<<<< HEAD
 {
     "buildCommand": "npm run build",
     "outputDirectory": "frontend/dist"
   }
+=======
+{
+    "buildCommand": "npm run build",
+    "outputDirectory": "frontend/dist"
+  }
+>>>>>>> 2c9ebc628a92e39bcbd75f6233c309639f36f6e3
   

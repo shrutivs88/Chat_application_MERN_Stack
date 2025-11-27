@@ -26,9 +26,6 @@ A modern full-stack chat application built with Node.js, Express, MongoDB, and R
 
 See `.env.example` for required environment variables.
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
 
 ---
 
