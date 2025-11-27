@@ -48,7 +48,7 @@ const Home = () => {
     const user = JSON.parse(localStorage.getItem("userInfo"));
     if (user) {
       setUser(user);
-      navigate("/chat");
+      navigate("/login");
     }
   }, [navigate]);
 
@@ -84,7 +84,7 @@ const Home = () => {
           theme: "dark",
         });
       } catch (error) {
-        console.error("Upload failed:", error);
+       
         toast.error("Upload failed. Please try again.", {
           theme: "dark",
         });
@@ -137,7 +137,7 @@ const Home = () => {
       toast.success("User registration is successful!", {
         theme: "dark",
       });
-      navigate("/chat");
+      navigate("/login");
     } catch (error) {
       toast.error(
         `Unable to register User at this time, Please try again later.`,

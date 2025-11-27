@@ -7,8 +7,8 @@
   "scripts": {
     "server": "node --watch ./backend/server.js",
     "start": "node ./backend/server.js",
-    "build": "npm install && npm install --prefix frontend --production=false && npm run build --prefix frontend"
-  },
+    "build": "npm run build --prefix frontend"
+    },
   "keywords": [
     "Realtime",
     "Chat",
@@ -17,7 +17,7 @@
     "MERN",
     "Stack"
   ],
-  "author": "Kiran Mahajan",
+  "author": "Shruti V S",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",

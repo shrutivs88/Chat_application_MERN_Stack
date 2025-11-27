@@ -21,8 +21,8 @@ app.use(express.json());
 
 app.get("/api/env", (req, res) => {
   const safeEnv = {
-    CLOUD_NAME: process.env.REACT_APP_CLOUD_NAME,
-    UPLOAD_PRESET: process.env.REACT_APP_UPLOAD_PRESET,
+    CLOUD_NAME: process.env.CLOUD_NAME,
+    UPLOAD_PRESET: process.env.UPLOAD_PRESET,
   };
   res.json(safeEnv);
 });
