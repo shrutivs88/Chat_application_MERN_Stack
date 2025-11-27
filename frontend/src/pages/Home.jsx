@@ -172,7 +172,7 @@ const Home = () => {
           email,
           password,
         },
-        // config
+        config
       );
 
       localStorage.setItem("userInfo", JSON.stringify(data));
@@ -190,18 +190,12 @@ const Home = () => {
     }
   };
   return (
-    <div className="w-full h-full flex flex-col items-center">
+    <div className="w-full h-full flex flex-col items-center ">
       <img
         className="h-24 w-24 rounded-2xl mt-5 sm:mt-8"
         src={logo}
         alt="logo"
       />
-      {/* <h1 className="text-3xl font-semibold text-center text-300 text">  ChatApp</h1>
-       <h3 className="text-xl font-semibold text-center text-300 mt-5 mb-0"> SignUp</h3> */}
-        <h1 className="text-3xl font-semibold text-center text-300 text-black">
-                    Chat App
-                    {/* <span className="text-blue-500"> ChatApp</span> */}
-                </h1>
       <form
         onSubmit={!isLogin ? handleSignUp : handleLogin}
         className="mt-7 sm:mt-10  bg-[#0021332c] max-w-[500px] w-11/12 sm:w-2/3 p-5 flex flex-col rounded-2xl pb-4 font-Marvel select-none shadow-xl backdrop-blur-lg"
@@ -234,7 +228,7 @@ const Home = () => {
               label="Name"
               inputType="text"
               iconName={faUser}
-              placeholder="Please Enter the User Name"
+              placeholder="Please Enter your name"
               id="name"
               isRequired={true}
               handleOnChange={(e) => setName(e.target.value)}
@@ -324,12 +318,21 @@ const Home = () => {
         <div className="flex flex-col items-center w-full mt-8 gap-2">
           <Button
             type="submit"
-            // styles="bg-[#4A8B66]"
-            styles="bg-[#003333]"
+            styles="bg-[#4A8B65]"
             title={isLogin ? "Login" : "Sign-Up"}
             isLoading={isLoading}
           />
-       
+          {isLogin && (
+            <Button
+              type="button"
+              styles="bg-[#B8B86A]"
+              title={"Use Guest Login"}
+              onClick={() => {
+                setEmail("guest@mail.com");
+                setPassword("guest@12345");
+              }}
+            />
+          )}
         </div>
       </form>
     </div>
