@@ -84,15 +84,6 @@ const Home = () => {
           theme: "dark",
         });
       } catch (error) {
-<<<<<<< HEAD
-       
-=======
-<<<<<<< HEAD
-       
-=======
-        //console.error("Upload failed:", error);
->>>>>>> 2c9ebc628a92e39bcbd75f6233c309639f36f6e3
->>>>>>> 28502bada768d7de3b92e1917e8f94c5e7d9001a
         toast.error("Upload failed. Please try again.", {
           theme: "dark",
         });
@@ -236,16 +227,7 @@ const Home = () => {
               label="Name"
               inputType="text"
               iconName={faUser}
-<<<<<<< HEAD
-              placeholder="Please Enter your name"
-=======
-<<<<<<< HEAD
-              placeholder="Please Enter your name"
-=======
               placeholder="Please Enter Your Name"
->>>>>>> 2c9ebc628a92e39bcbd75f6233c309639f36f6e3
->>>>>>> 28502bada768d7de3b92e1917e8f94c5e7d9001a
-              id="name"
               isRequired={true}
               handleOnChange={(e) => setName(e.target.value)}
             />
